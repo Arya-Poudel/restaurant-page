@@ -7,9 +7,9 @@ import displayInfo from "./modules/about"
 addHeader();
 displayHome();
 
-content = document.getElementById('content')
+let content = document.getElementById('content')
 
-home = document.getElementById('home');
+let home = document.getElementById('home');
 home.addEventListener('click', () => {
 	content.textContent = '';
 	displayHome();
@@ -17,14 +17,14 @@ home.addEventListener('click', () => {
 
 
 
-menu = document.getElementById('menu');
+let menu = document.getElementById('menu');
 menu.addEventListener('click', () => {
 	content.textContent = '';
 	displayMenu();
 });
 
 
-about = document.getElementById('about');
+let about = document.getElementById('about');
 about.addEventListener('click', () => {
 	content.textContent = '';
 	displayInfo();
